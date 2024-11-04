@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "color.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/generate_palette",
+        "dest": "color.py"
+      },
+      {
+        "src": "/",
+        "dest": "index.html"
+      }
+    ]
+  }
+  
